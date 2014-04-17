@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="CPViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6by-Yo-3VL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="FU4-z5-Psg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ova-mO-HlK">
+                                <rect key="frame" x="0.0" y="200" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="64n-MI-X5L"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1V-sC-4CF">
+                                <rect key="frame" x="105" y="494" width="110" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="4Ux-yL-qnC"/>
+                                    <constraint firstAttribute="height" constant="54" id="MvZ-Li-hfv"/>
+                                </constraints>
+                                <state key="normal" title="Test">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTestPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qhk-u3-cqr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6by-Yo-3VL" secondAttribute="trailing" id="0rq-7y-vj7"/>
+                            <constraint firstAttribute="trailing" secondItem="Ova-mO-HlK" secondAttribute="trailing" id="LJM-V0-UE5"/>
+                            <constraint firstItem="6by-Yo-3VL" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Pe1-uO-COq"/>
+                            <constraint firstItem="Ova-mO-HlK" firstAttribute="top" secondItem="6by-Yo-3VL" secondAttribute="bottom" id="gDV-mC-5ng"/>
+                            <constraint firstItem="6by-Yo-3VL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qZb-jS-nWT"/>
+                            <constraint firstAttribute="centerX" secondItem="s1V-sC-4CF" secondAttribute="centerX" id="rCW-DE-zbm"/>
+                            <constraint firstItem="Ova-mO-HlK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="rgN-lr-YO4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="s1V-sC-4CF" secondAttribute="bottom" constant="20" id="yEl-jA-WUh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="6by-Yo-3VL" id="Q0c-zc-1fR"/>
+                        <outlet property="imageView2" destination="Ova-mO-HlK" id="zro-UW-SFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
